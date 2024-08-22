@@ -1,0 +1,4 @@
+minfree :: [Nat] -> Nat
+minfree xs = head([0..]\\xs)
+(\\) :: Eq a=> [a]-> [a] -> [a]
+us\\vs = filter (notmember vs) us

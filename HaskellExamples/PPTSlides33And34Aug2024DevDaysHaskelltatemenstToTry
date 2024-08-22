@@ -1,0 +1,82 @@
+(\x -> x * x) 6
+
+addn = \n -> (\m -> n + m)
+
+add1 = addn 1 
+
+add1 2
+
+(\x -> (\y -> x + y)) 1 5
+
+(\x->(\y->(\z->x+y+z))) 1 5 3  
+
+(\x->x+1)((\y->y*y) 4)
+
+((\x->x+1).(\y->y*y)) 4 
+
+(+) 2 3         
+
+inversesqrt=(1/).sqrt     
+
+inversesqrt 4                                 
+
+(\x->2*x).(\x->x*x)4)  
+
+import Data.List
+
+take 5 [1..]  
+
+root a b c = (-b + sd)/(2*a) where sd = sqrt d where d = b*b – 4*a*c
+
+root 1 5 6
+
+
+b = [1, 2, 3] 
+
+reverse b
+
+b
+
+add :: Integer -> Integer
+add x y = x + y
+
+square :: Integer -> Integer
+square z = z*z
+
+:l Test
+module Test where
+test = print "Hello"
+
+:l Main
+module Main where
+main :: IO ()
+main = putStrLn "hello"
+
+:l DoBlock
+main = do 
+  { putStrLn "Input a value for x: ";
+    x <- getDouble;
+    putStrLn "Input a value for y: ";
+    y <- getDouble;
+    print (x + y);
+  }
+
+getDouble :: IO Double
+getDouble = readLn
+
+*Main>main
+
+:module -Main
+
+:l factorial1
+fac :: Integer -> Integer
+fac 0 = 1
+fac n = n * fac (n - 1)
+
+map (\x->2*x) [1,2,3]
+
+filter even [1..100]  
+
+map (*2) $ filter odd [1..100]  
+
+foldl (\x y-> x+y ) 0 [1,2,3]                    
