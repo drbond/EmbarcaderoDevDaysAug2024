@@ -1,0 +1,8 @@
+inherited PuzzleForm_SmXhdpiPh: TPuzzleForm_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited TextComputableSP8Title: TText
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+  end
+end
